@@ -30,8 +30,8 @@
                     'class' => 'bootstrap.widgets.TbNav',
                     'items' => array(
                         array('label'=>'Beranda', 'url'=>array('/site/index')),
-                        array('label'=>'Mendaftar', 'url'=>array('pendaftar/daftar')),
-                        array('label'=>'Check Status Verifikasi', 'url'=>'#'),
+                        array('label'=>'Mendaftar', 'url'=>array('/pendaftar/daftar')),
+                        array('label'=>'Check Status Verifikasi', 'url'=>array('/pendaftar/checkStatus')),
                         array('label'=>'Cara Mendaftar', 'url'=>array('/site/page', 'view'=>'about')),
                         array('label'=>'Kontak Kami', 'url'=>array('/site/contact')),
 //                        array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
@@ -58,10 +58,10 @@
     </div>
 
 	<div class="row" id="footer">
-        <div class="span12" >
-            Copyright &copy; <?php echo date('Y'); ?> Team IT Pemerintah Provinsi Kalimantan Tengah.<br/>
-            All Rights Reserved.<br/>
-            <?php echo Yii::powered(); ?>
+        <div class="span12" style="text-align: center; border-top: #fa9f1e solid thin; padding-top: 10px;">
+            &copy; <?php echo date('Y'); ?> Tim Pengembangan IT Pemerintah Provinsi Kalimantan Tengah<br/>
+            <!--All Rights Reserved.<br/>-->
+            <?php // echo Yii::powered(); ?>
         </div>
 	</div><!-- footer -->
 

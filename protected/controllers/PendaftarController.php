@@ -28,7 +28,7 @@ class PendaftarController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array( 'daftar', 'renderIsianFormasi', 'praVerifikasi'),
+				'actions'=>array( 'daftar', 'renderIsianFormasi', 'praVerifikasi', 'checkStatus', 'captcha'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -226,8 +226,14 @@ class PendaftarController extends Controller
         }
         // bila sudah bisa diserahkan maka tampilkan pesan bahwa data hanya bisa diserahkan satu kali
         if($model->status_scenario==Pendaftar::STATUS_BISA_SERAHKAN) {
+            $pesan=TbHtml::labelTb('Perhatian:', array('color'=>  TbHtml::LABEL_COLOR_IMPORTANT));
+            $pesan=<<<PESAN
+Silahkan klik tombol <b>[Serahkan Isian]</b> yang terdapat di bawah formulir untuk menyerahkan isian Formulir Pendaftaran Anda agar segera di evaluasi. 
+<br><br>
+            {$pesan} Isian yang sudah tersimpan dan diserahkan tidak dapat diubah lagi. Pastikan saat Anda mengklik tombol <b>[Serahkan Isian]</b>, Isian Anda sudah benar.
+PESAN;
             Yii::app()->user->setFlash('pesan',
-                'Silahkan klik tombol [Serahkan Isian] Untuk menyerahkan isian Formulir Pendaftaran Anda agar segera di evaluasi. <br><br>Perhatian: Isian yang sudah tersimpan dan diserahkan tidak dapat diubah lagi. Pastikan saat Anda mengklik tombol [Serahkan Isian], Isian Anda sudah benar!');
+                $pesan);
         }
 
 		$this->render('daftar',array(
@@ -237,17 +243,28 @@ class PendaftarController extends Controller
     
     /**
      * Akan memperlihatkan apa yang sudah diisikan oleh peserta dan juga menunjukkan
-     * kode verifikasi agar bisa digunakan oleh Peserta
+     * kode verifikasi agar bisa digunakan oleh Peserta.
+     * 
+     * Bila tidak berasal dari pendaftar/daftar dan pendaftar/checkStatus maka akan di redirect ke checkStatus.
+     * 
      * @param int $id pendaftar
      */
     public function actionPraVerifikasi($kode) {
         $this->layout = 'column1';
+        $urlReferrer = Yii::app()->request->urlReferrer;
+        if(strcasecmp($urlReferrer, Yii::app()->createAbsoluteUrl('/pendaftar/checkStatus'))!=0 && 
+                strcasecmp($urlReferrer, Yii::app()->createAbsoluteUrl('/pendaftar/daftar'))!=0) {
+            $this->redirect(array('checkStatus'));
+        }
 		$model=Pendaftar::model()->find('kode_verifikasi=:kode', array(':kode'=>$kode));
 		if ($model===null) {
 			throw new CHttpException(404,"Pelamar dengan kode verifikasi $kode tersebut tidak ada.");
 		}
-        Yii::app()->user->setFlash('pesan',
+        // bila dari pendaftaran tampilkan pesan sponsor :D
+        if(strcasecmp($urlReferrer, Yii::app()->createAbsoluteUrl('/pendaftar/daftar'))==0) {
+            Yii::app()->user->setFlash('pesan',
                 "Kode verifikasi Anda adalah: <b>{$model->kode_verifikasi}</b> dan dapat digunakan untuk melakukan checking terhadap status formulir pendaftaran Anda. <br>Silahkan cetak halaman ini untuk arsip Anda dengan menekan tombol CTRL + P atau dari menu untuk mencetak halaman web milik masing-masing browser.");
+        }
 		$this->render('praVerifikasi',array(
 			'model'=>$model,
 		));
@@ -304,6 +321,42 @@ class PendaftarController extends Controller
      * todo: buat untuk check status verifikasi
      */
     public function actionCheckStatus() {
+        $model = new CheckStatusForm;
+        $success = false;
+        
+		// if it is ajax validation request
+//		if(isset($_POST['ajax']) && $_POST['ajax']==='check-status-form')
+//		{
+//			echo CActiveForm::validate($model);
+//			Yii::app()->end();
+//		}
+
+		// collect user input data
+		if(isset($_POST['CheckStatusForm']))
+		{
+			$model->attributes=$_POST['CheckStatusForm'];
+			// validate user input and redirect to the previous page if valid
+            $success = $model->validate();
+		}
+		// display the login form
+		$this->render('checkStatus',array(
+            'model'=>$model, 
+            'success'=>$success)
+        );
         
     }
+    
+	/**
+	 * Declares class-based actions.
+	 */
+	public function actions()
+	{
+		return array(
+			// captcha action renders the CAPTCHA image displayed on the contact page
+			'captcha'=>array(
+				'class'=>'CCaptchaAction',
+				'backColor'=>0xFFFFFF,
+			),
+		);
+	}
 }

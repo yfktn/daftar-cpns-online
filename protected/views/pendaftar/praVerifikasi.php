@@ -6,13 +6,15 @@
 <?php
 $this->breadcrumbs=array(
 //	'Pendaftar'=>array('index'),
-	"Pelamar Atas Nama $model->nama",
+	"Pelamar Atas Nama $model->nama dengan Kode Verifikasi $model->kode_verifikasi",
 );?>
 
 <?php if(Yii::app()->user->hasFlash('pesan')): ?>
-    <?php echo TbHtml::alert(
-            TbHtml::ALERT_COLOR_INFO, 
-            Yii::app()->user->getFlash('pesan')); ?>
+    <?php echo 
+            TbHtml::alert(
+                TbHtml::ALERT_COLOR_INFO, 
+                TbHtml::labelTb('Perhatian!', $htmlOptions=array('color'=>  TbHtml::LABEL_COLOR_IMPORTANT))
+                    . ' '.Yii::app()->user->getFlash('pesan')); ?>
 <?php endif; ?>
 <center>
     <h2><u>Formulir Pendaftaran CPNS Tahun <?php echo Yii::app()->params['yearTest']; ?></u></h2>

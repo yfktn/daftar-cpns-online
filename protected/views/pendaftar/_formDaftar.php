@@ -6,7 +6,7 @@
 <?php if(Yii::app()->user->hasFlash('pesan')): ?>
     <?php echo TbHtml::alert(
             TbHtml::ALERT_COLOR_INFO, 
-            '<b>'. Yii::app()->user->getFlash('pesan').'</b>'); ?>
+            Yii::app()->user->getFlash('pesan')); ?>
 <?php endif; ?>
 <div class="form">
 
@@ -140,6 +140,7 @@
                 )); ?>
             <?php endif; ?>
             <p class="help-block">Klik <b>[Review Isian]</b> untuk melakukan review terhadap isian dan <b>[Serahkan Isian]</b> untuk menyimpan data dan menyerahkan isian untuk di verifikasi.</p>
+            <p><?php echo TbHtml::labelTb('Hi!', array('color'=>  TbHtml::LABEL_COLOR_IMPORTANT))?> Tombol <b>[Serahkan Isian]</b> akan muncul setelah <b>[Review Isian]</b> di klik.</p>
         </div>
 
     <?php $this->endWidget(); ?>

@@ -180,4 +180,15 @@ class Formasi extends CActiveRecord
     public function listDataInstansiTenaga() {
         
     }
+    
+    /**
+     * Kembalikan nama instansi, tenaga, jabatan dan kualifikasi pendidikan yang
+     * mudah untuk dibaca dari record terpilih.
+     */
+    public function getFormasiStr() {
+        return sprintf("Formasi %s sebagai %s dengan kualifikasi pendidikan %s",
+                $this->idTenagaDilamar->nama, 
+                $this->idJabatan->nama,
+                $this->idKualPend->nama);
+    }
 }

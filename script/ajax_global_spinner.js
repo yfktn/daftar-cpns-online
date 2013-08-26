@@ -25,7 +25,7 @@ var ajax_cnt = 0; // Support for parallel AJAX requests
  
 // Global functions to show/hide on ajax requests
 $(document).ajaxStart(function() {
-   $('<div id="spinner_center" style="position:fixed;top:70px;left:49%;">&amp;nbsp;</div>').appendTo('body');
+   $('<div id="spinner_center" style="position:fixed;top:70px;left:49%;">LOADING...</div>').appendTo('body');
    spinner.spin($('#spinner_center')[0]);
    ajax_cnt++;
 });

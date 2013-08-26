@@ -140,8 +140,8 @@ class Pendaftar extends CActiveRecord
 			'alamat_sekolah_terakhir' => 'Alamat Sekolah Terakhir',
 			'tempat_lahir' => 'Tempat Lahir',
 			'tanggal_lahir' => 'Tanggal Lahir',
-			'create_time' => 'Create Time',
-			'update_time' => 'Update Time',
+			'create_time' => 'Waktu Pendaftaran',
+			'update_time' => 'Waktu Update Status Pendaftaran',
 			'terverifikasi' => 'Status Verifikasi',
 			'id_verifikator' => 'Id Verifikator',
 			'kode_verifikasi' => 'Kode Verifikasi',
@@ -152,6 +152,7 @@ class Pendaftar extends CActiveRecord
 			'id_kual_pend' => 'Kualifikasi Pendidikan',
 			'id_pendidikan_terakhir' => 'Pendidikan Terakhir',
 			'id_lokasi_test' => 'Lokasi Test',
+            'id_status_pelamar' => 'Status Berkas Pelamar',
 		);
 	}
 
