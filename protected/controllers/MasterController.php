@@ -9,6 +9,7 @@ class MasterController extends YFMasterController
 	{
 		$this->render('index');
 	}
+   
 
 	// Uncomment the following methods and override them if needed
 	/*

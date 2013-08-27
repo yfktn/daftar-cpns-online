@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<!--<h1>Master Instansis</h1>-->
+<h2>Master Instansi</h2>
 
 <?php $this->widget('bootstrap.widgets.TbListView', array(
 	'dataProvider'=>$dataProvider,

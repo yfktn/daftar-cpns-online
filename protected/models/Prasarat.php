@@ -237,4 +237,14 @@ FORMAT;
         $pesan = "Maaf IPK/Rata-Rata pendidikan terakhir Anda tidak mencukupi. IPK Dipersyaratkan minimal {$prasaratAry['IPK'][$kodePendidikanAkhir]}";
         return false;
     }
+    
+    /**
+     * @return array untuk filter instansi ...
+     */
+    public function defaultScope() {
+        return array(
+            'condition'=>'id_instansi=:idinstansi',
+            'params'=>array(':idinstansi'=>  Yii::app()->user->instansi)
+        );
+    }
 }

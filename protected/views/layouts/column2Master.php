@@ -32,10 +32,13 @@
             array('label'=>'Master Kualifikasi Pendidikan', 'url'=>array('masterKualPend/index')),
             array('label'=>'Master Pendidikan Terakhir', 'url'=>array('masterPendTerakhir/index')),
             array('label'=>'-'),
-            array('label'=>'Status Pelamar', 'url'=>array('statusPelamar/index')),
+            array('label'=>'User', 'url'=>array('user/index')),
             array('label'=>'-'),
             array('label'=>'Buat Formasi', 'url'=>array('formasi/index')),
             array('label'=>'Prasarat Formasi', 'url'=>array('prasarat/index')),
+            array('label'=>'-'),
+            array('label'=>'Status Pelamar', 'url'=>array('statusPelamar/index')),
+            array('label'=>'List Pelamar', 'url'=>array('adminPelamar/index')),
         ));
         ?>
     </div>

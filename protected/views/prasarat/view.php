@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'List Prasarat', 'url'=>array('index')),
 	array('label'=>'Create Prasarat', 'url'=>array('create')),
 	array('label'=>'Update Prasarat', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Prasarat', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete Prasarat', 'url'=>'#', 'linkOptions'=>array('csrf'=>true, 'submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Prasarat', 'url'=>array('admin')),
 );
 ?>

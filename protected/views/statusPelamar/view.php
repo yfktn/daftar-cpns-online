@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'List StatusPelamar', 'url'=>array('index')),
 	array('label'=>'Create StatusPelamar', 'url'=>array('create')),
 	array('label'=>'Update StatusPelamar', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete StatusPelamar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete StatusPelamar', 'url'=>'#', 'linkOptions'=>array('csrf'=>true, 'submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage StatusPelamar', 'url'=>array('admin')),
 );
 ?>

@@ -43,8 +43,9 @@
             <?php echo $form->textFieldControlGroup($model,'IPK',array('span'=>1,
                 'help'=>'Sebagai contoh penulisan: 3.5 (gunakan titik untuk tanda desimal)',
                 'helpOptions'=>array('type'=>  TbHtml::HELP_TYPE_BLOCK))); ?>
-            <?php echo TbHtml::labelTb(TbHtml::icon(TbHtml::ICON_FIRE).' '. 'Apabila Nilai adalah 0 maka minimal IPK akan diambil dari isian Prasarat Formasi berdasarkan pendidikan terakhir Pelamar',
-                    $htmlOptions=array('color'=>  TbHtml::LABEL_COLOR_WARNING)); ?>
+            <?php echo TbHtml::labelTb(TbHtml::icon(TbHtml::ICON_FIRE).'!',
+                    $htmlOptions=array('color'=>  TbHtml::LABEL_COLOR_WARNING)),
+                    ' Apabila Nilai IPK tersebut di set dengan 0 maka minimal IPK akan diambil dari isian Prasarat Formasi berdasarkan pendidikan terakhir Pelamar'; ?>
 
         <div class="form-actions">
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(

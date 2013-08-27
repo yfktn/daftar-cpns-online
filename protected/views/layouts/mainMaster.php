@@ -31,6 +31,7 @@
                     'items' => array(
                         array('label'=>'Beranda', 'url'=>array('/master/index')),
                         array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                        array('label'=>'Update Password', 'url'=>array('/user/updatePassword', 'id'=>  Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                     ),
                 ),
@@ -52,12 +53,11 @@
     <div class="row"><!-- content -->
         <?php echo $content; ?>
     </div>
-    <hr>
 	<div class="row" id="footer">
-        <div class="span12" >
-            Copyright &copy; <?php echo date('Y'); ?> Team IT Pemerintah Provinsi Kalimantan Tengah.<br/>
-            All Rights Reserved.<br/>
-            <?php echo Yii::powered(); ?>
+        <div class="span12" style="text-align: center; border-top: #fa9f1e solid thin; padding-top: 10px;">
+            &copy; <?php echo date('Y'); ?> Tim Pengembangan IT Pemerintah Provinsi Kalimantan Tengah<br/>
+            <!--All Rights Reserved.<br/>-->
+            <?php // echo Yii::powered(); ?>
         </div>
 	</div><!-- footer -->
 

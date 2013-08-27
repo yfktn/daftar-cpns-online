@@ -160,10 +160,11 @@ class Formasi extends CActiveRecord
         else
             $where[] = 'tahun_test='.(int)$year;
         
-        if($instansi!=0) {
+        if($instansi!=0 || isset($instansi[0])) { // check juga apabila ada setting $instansi ... 
             $where[] = 'id_instansi=:instansi';
-            $param += array(':instansi'=>$instansi);
+            $param = array(':instansi'=>$instansi); // replace param
         }
+//        var_dump($instansi, $param, $instansi!=0);
         
         return Yii::app()->db->createCommand()
                 ->select('f.id,f.tahun_test,mi.nama as instansi,td.nama as tenaga_dilamar,mj.nama as jabatan,kp.nama as kual_pend')
@@ -190,5 +191,15 @@ class Formasi extends CActiveRecord
                 $this->idTenagaDilamar->nama, 
                 $this->idJabatan->nama,
                 $this->idKualPend->nama);
+    }
+    
+    /**
+     * @return array untuk filter instansi ...
+     */
+    public function defaultScope() {
+        return array(
+            'condition'=>'id_instansi=:idinstansi',
+            'params'=>array(':idinstansi'=>  Yii::app()->user->instansi)
+        );
     }
 }

@@ -2073,3 +2073,1358 @@ Stack trace:
 REQUEST_URI=/index.php?r=pendaftar/checkStatus
 HTTP_REFERER=http://cpns.local/index.php?r=pendaftar/checkStatus
 ---
+2013/08/27 08:59:50 [error] [php] Argument 1 passed to YFWebUser::isCan() must implement interface YF_ICanAccess, instance of CAccessRule given, called in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code on line 1 and defined (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:24)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (24)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 09:03:03 [error] [php] Argument 1 passed to YFWebUser::isCan() must implement interface YF_ICanAccess, instance of CAccessRule given, called in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code on line 1 and defined (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:24)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (24)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 09:08:29 [error] [php] Argument 1 passed to YFWebUser::isCan() must implement interface YF_ICanAccess, instance of CInlineAction given, called in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code on line 1 and defined (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:24)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (24)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 09:09:16 [error] [exception.CException] exception 'CException' with message 'Properti "YFWebUser.is" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('is')
+#1 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): CWebUser->__get('is')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan(Object(MasterController))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('Yii::app()->use...', Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(YFWebUser))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(YFWebUser), Object(MasterController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:09:29 [error] [exception.CException] exception 'CException' with message 'Properti "YFWebUser.level" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#1 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(11): CWebUser->__get('level')
+#2 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(15): YFWebUser->isSuperAdmin()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(20): YFWebUser->isAdmin()
+#4 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28) : eval()'d code(1): YFWebUser->isOperator()
+#5 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): eval()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan(Object(MasterController))
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('Yii::app()->use...', Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(YFWebUser))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(YFWebUser), Object(MasterController), Object(CInlineAction), '127.0.0.1', 'GET')
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:12:05 [error] [exception.CException] exception 'CException' with message 'Properti "YFWebUser.level" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(160): CComponent->__set('level', 'Anon')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/YiiBase.php(220): CWebUser->__set('level', 'Anon')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(132): CWebApplication->getUser()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:13:43 [error] [exception.CException] exception 'CException' with message 'Properti "YFWebUser.level"  adalah read only.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:170
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(160): CComponent->__set('level', 'Anon')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/YiiBase.php(220): CWebUser->__set('level', 'Anon')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(209): CModule->getComponent('user')
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(132): CWebApplication->getUser()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:37:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 09:38:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:41:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 09:41:58 [error] [exception.CException] exception 'CException' with message 'UserIdentity dan behaviornya tidak memiliki method ataupun closure bernama "initLevel"' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/components/UserIdentity.php(48): CComponent->__call('initLevel', Array)
+#1 /home/tonier/web-prj/cpns/protected/components/UserIdentity.php(48): UserIdentity->initLevel('SuperAdmin')
+#2 /home/tonier/web-prj/cpns/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 /home/tonier/web-prj/cpns/protected/controllers/SiteController.php(100): CModel->validate()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('login')
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 09:42:28 [error] [exception.CException] exception 'CException' with message 'YFWebUser dan behaviornya tidak memiliki method ataupun closure bernama "initLevel"' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/components/UserIdentity.php(48): CComponent->__call('initLevel', Array)
+#1 /home/tonier/web-prj/cpns/protected/components/UserIdentity.php(48): YFWebUser->initLevel('SuperAdmin')
+#2 /home/tonier/web-prj/cpns/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 /home/tonier/web-prj/cpns/protected/controllers/SiteController.php(100): CModel->validate()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('login')
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 09:42:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 09:55:35 [error] [system.db.CDbCommand] CDbCommand::fetch() gagal: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. Statement SQL yang dijalankan: SELECT * FROM `tbl_user` `t` WHERE id=? LIMIT 1. Bound with :0=NULL.
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+in /home/tonier/web-prj/cpns/protected/components/UserIdentity.php (49)
+in /home/tonier/web-prj/cpns/protected/models/LoginForm.php (52)
+2013/08/27 09:55:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE id=? LIMIT 1. Bound with :0=NULL' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): CActiveRecord->find('id=?', Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#6 /home/tonier/web-prj/cpns/protected/components/UserIdentity.php(49): CWebUser->__get('level')
+#7 /home/tonier/web-prj/cpns/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#11 /home/tonier/web-prj/cpns/protected/controllers/SiteController.php(100): CModel->validate()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('login')
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#25 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 10:09:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 10:12:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 10:12:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 10:14:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 10:15:21 [error] [php] Undefined index: view (/home/tonier/web-prj/cpns/protected/components/YFMasterController.php:58)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): StatusPelamarController->filterAccessControl()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): StatusPelamarController->runActionWithFilters()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): StatusPelamarController->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=statusPelamar/view&id=TR
+in /home/tonier/web-prj/cpns/protected/components/YFMasterController.php (58)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (43)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 13:11:50 [error] [exception.CException] exception 'CException' with message 'Properti "User.last_login_time" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(145): CComponent->__get('last_login_time')
+#1 /home/tonier/web-prj/cpns/protected/models/User.php(98): CActiveRecord->__get('last_login_time')
+#2 /home/tonier/web-prj/cpns/protected/views/user/admin.php(47): User->search()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(107): CController->render('admin', Array)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://cpns.local/index.php?r=user
+---
+2013/08/27 13:12:51 [error] [exception.CException] exception 'CException' with message 'Properti "User.last_login_time" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(145): CComponent->__get('last_login_time')
+#1 /home/tonier/web-prj/cpns/protected/models/User.php(98): CActiveRecord->__get('last_login_time')
+#2 /home/tonier/web-prj/cpns/protected/views/user/admin.php(47): User->search()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(107): CController->render('admin', Array)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): UserController->actionAdmin()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://cpns.local/index.php?r=user
+---
+2013/08/27 13:20:16 [error] [php] Missing argument 2 for YiiBase::t(), called in /home/tonier/web-prj/cpns/protected/models/User.php on line 48 and defined (/home/tonier/web-prj/yii-1.1.14.f0fee9/framework/YiiBase.php:577)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(260): User->createValidators()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(304): User->getValidators()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/helpers/CHtml.php(1414): User->isAttributeRequired()
+#3 /home/tonier/web-prj/cpns/protected/extensions/bootstrap/helpers/TbHtml.php(2077): activeLabelEx()
+#4 /home/tonier/web-prj/cpns/protected/extensions/bootstrap/helpers/TbHtml.php(1774): activeControlGroup()
+#5 /home/tonier/web-prj/cpns/protected/extensions/bootstrap/widgets/TbActiveForm.php(433): activeTextFieldControlGroup()
+#6 /home/tonier/web-prj/cpns/protected/views/user/_form.php(22): TbActiveForm->textFieldControlGroup()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): UserController->renderInternal()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): UserController->renderFile()
+#10 /home/tonier/web-prj/cpns/protected/views/user/create.php(20): UserController->renderPartial()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): UserController->renderInternal()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): UserController->renderFile()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): UserController->renderPartial()
+#15 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(36): UserController->render()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): UserController->runActionWithFilters()
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): UserController->run()
+#26 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/create
+in /home/tonier/web-prj/cpns/protected/models/User.php (48)
+in /home/tonier/web-prj/cpns/protected/extensions/bootstrap/helpers/TbHtml.php (2077)
+in /home/tonier/web-prj/cpns/protected/extensions/bootstrap/helpers/TbHtml.php (1774)
+2013/08/27 13:59:01 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:01:07 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:01:26 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:01:34 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:17:01 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:17:18 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:17:46 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (52)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:36:34 [error] [php] Undefined index:  (/home/tonier/web-prj/cpns/protected/controllers/UserController.php:50)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): UserController->runActionWithFilters()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): UserController->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/view&id=2
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (50)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (51)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 14:39:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/create
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/index
+---
+2013/08/27 14:39:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/update&id=BARTIM
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/view&id=BARTIM
+---
+2013/08/27 14:41:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 14:41:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 14:44:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/create
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 14:46:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 14:49:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/update&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/view&id=3
+---
+2013/08/27 14:51:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:27:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/updatePassword
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:31:41 [error] [php] Invalid argument supplied for foreach() (/home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:104)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): UserController->runActionWithFilters()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): UserController->run()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/index
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 15:32:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=master/index
+---
+2013/08/27 15:33:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:34:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/update&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/view&id=3
+---
+2013/08/27 15:34:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/view&id=3
+---
+2013/08/27 15:34:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/view&id=3
+---
+2013/08/27 15:37:20 [error] [php] Undefined index: updatePassword (/home/tonier/web-prj/cpns/protected/components/YFMasterController.php:58)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+in /home/tonier/web-prj/cpns/protected/components/YFMasterController.php (58)
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (36)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (51)
+2013/08/27 15:41:56 [error] [exception.CException] exception 'CException' with message 'Properti "UpdatePasswordForm.id" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/views/user/updatePassword.php(5): CComponent->__get('id')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('updatePassword', Array, true)
+#5 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(225): CController->render('updatePassword', Array)
+#6 [internal function]: UserController->actionUpdatePassword('3')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:42:58 [error] [exception.CException] exception 'CException' with message 'Properti "UpdatePasswordForm.user_name" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/views/user/updatePassword.php(10): CComponent->__get('user_name')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('updatePassword', Array, true)
+#5 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(225): CController->render('updatePassword', Array)
+#6 [internal function]: UserController->actionUpdatePassword('3')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:43:15 [error] [exception.CException] exception 'CException' with message 'Properti "UpdatePasswordForm.isNewRecord" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/views/user/_updatePasswordForm.php(29): CComponent->__get('isNewRecord')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/cpns/protected/views/user/updatePassword.php(12): CController->renderPartial('_updatePassword...', Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('updatePassword', Array, true)
+#9 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(225): CController->render('updatePassword', Array)
+#10 [internal function]: UserController->actionUpdatePassword('3')
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#25 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:44:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master/index')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master/index
+HTTP_REFERER=http://cpns.local/index.php?r=site/login
+---
+2013/08/27 15:44:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master/index')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master/index
+---
+2013/08/27 15:44:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('master')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=master
+---
+2013/08/27 15:44:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi
+---
+2013/08/27 15:45:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:46:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:46:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 15:50:34 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (117)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 15:51:44 [error] [exception.CException] exception 'CException' with message 'Properti "UpdatePasswordForm.id" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/controllers/UserController.php(217): CComponent->__get('id')
+#1 [internal function]: UserController->actionUpdatePassword('3')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updatePassword')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/updatePass...')
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/updatePassword&id=3
+HTTP_REFERER=http://cpns.local/index.php?r=user/updatePassword&id=3
+---
+2013/08/27 15:55:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('statusPelamar/u...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=statusPelamar/update&id=TL
+HTTP_REFERER=http://cpns.local/index.php?r=statusPelamar/view&id=TL
+---
+2013/08/27 15:56:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CHttpRequest.php:1247
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=statusPelamar/delete&id=TL
+HTTP_REFERER=http://cpns.local/index.php?r=statusPelamar/view&id=TL
+---
+2013/08/27 15:57:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/create
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/index
+---
+2013/08/27 16:00:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/update&id=BARTIM
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/view&id=BARTIM
+---
+2013/08/27 16:00:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/update&id=BARTIM
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/view&id=BARTIM
+---
+2013/08/27 16:00:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+HTTP_REFERER=http://cpns.local/index.php?r=user/index
+---
+2013/08/27 16:01:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CHttpRequest.php:1247
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=statusPelamar/delete&id=TR
+HTTP_REFERER=http://cpns.local/index.php?r=statusPelamar/view&id=TR
+---
+2013/08/27 16:04:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CHttpRequest.php:1247
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=masterTenagaDilamar/delete&id=test
+HTTP_REFERER=http://cpns.local/index.php?r=masterTenagaDilamar/view&id=test
+---
+2013/08/27 16:06:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CHttpRequest.php:1247
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=user/delete&id=4
+HTTP_REFERER=http://cpns.local/index.php?r=user/view&id=4
+---
+2013/08/27 16:08:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CHttpRequest.php:1247
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=formasi/delete&id=22fe34f6a39f9ad4a8919aaca6e16f31
+HTTP_REFERER=http://cpns.local/index.php?r=formasi/view&id=22fe34f6a39f9ad4a8919aaca6e16f31
+---
+2013/08/27 16:11:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterJabatan/d...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterJabatan/delete&id=test
+HTTP_REFERER=http://cpns.local/index.php?r=masterJabatan/view&id=test
+---
+2013/08/27 16:13:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/admin')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prasarat/admin
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/index
+---
+2013/08/27 16:13:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/update')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prasarat/update&id=1
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/view&id=1
+---
+2013/08/27 16:31:55 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() gagal: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. Statement SQL yang dijalankan: SELECT COUNT(*) FROM `tbl_prasarat` `t` WHERE id_instansi=:idinstans. Bound with :idinstansi='KALTENG'.
+in /home/tonier/web-prj/cpns/protected/views/prasarat/index.php (22)
+in /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php (91)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 16:31:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_prasarat` `t` WHERE id_instansi=:idinstans. Bound with :idinstansi='KALTENG'' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(147): CListView->init()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#10 /home/tonier/web-prj/cpns/protected/views/prasarat/index.php(22): CBaseController->widget('bootstrap.widge...', Array)
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php(91): CController->render('index', Array)
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): PrasaratController->actionIndex()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#26 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/index')
+#27 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=prasarat/index
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/index
+---
+2013/08/27 16:33:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('masterInstansi/...')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=masterInstansi/update&id=BARTIM
+HTTP_REFERER=http://cpns.local/index.php?r=masterInstansi/view&id=BARTIM
+---
+2013/08/27 16:33:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/create')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prasarat/create
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/index
+---
+2013/08/27 17:02:35 [error] [php] Undefined index: index (/home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:33)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/index
+in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php (33)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (51)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 17:05:08 [error] [exception.CException] exception 'CException' with message 'AdminPelamarController tidak bisa menemukan view "_search" yang di-request.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/views/adminPelamar/index.php(42): CController->renderPartial('_search', Array)
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php(18): CController->render('index', Array)
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): AdminPelamarController->actionIndex()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/in...')
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=adminPelamar/index
+HTTP_REFERER=http://cpns.local/index.php?r=master/index
+---
+2013/08/27 17:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "update" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/update&id=8
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/27 17:07:47 [error] [php] Undefined index: index (/home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:33)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/index
+in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php (33)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (51)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/27 17:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "view" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/vi...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/view&id=1
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---

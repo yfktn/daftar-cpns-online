@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'List MasterKualPend', 'url'=>array('index')),
 	array('label'=>'Create MasterKualPend', 'url'=>array('create')),
 	array('label'=>'Update MasterKualPend', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete MasterKualPend', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete MasterKualPend', 'url'=>'#', 'linkOptions'=>array('csrf'=>true, 'submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage MasterKualPend', 'url'=>array('admin')),
 );
 ?>

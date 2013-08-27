@@ -1,6 +1,6 @@
 <?php
 
-class PendaftarController extends Controller
+class PendaftarController extends Controller implements YF_ICanAccess
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -33,7 +33,8 @@ class PendaftarController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('index','create','update','view'),
-				'users'=>array('@'),
+                'expression'=>  'Yii::app()->user->isCan(Yii::app()->controller)'
+//				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
@@ -44,6 +45,26 @@ class PendaftarController extends Controller
 			),
 		);
 	}
+    
+    public function getRole($task=null) {
+        if(is_null($task)) {
+            $task=  Yii::app()->controller->action->id; // if task == null maka dapatkan id milik action dari controller saat ini
+        }
+        $role = array();
+        $role['index'] = $role['view'] = array('minimalUserLevel'=>YFLevelLookup::OPERATOR);
+        $role['create'] = $role['admin'] = $role['delete'] = array(
+            'minimalUserLevel' => YFLevelLookup::ADMIN
+        );
+        $role['update'] = array(
+            'minimalUserLevel' => YFLevelLookup::ADMIN,
+//            'bizRule' => function($authorUserId) { 
+//                return Yii::app()->user->id == $authorUserId; 
+//            }
+        );
+        return $role[$task];
+        
+    }
+    
 
 	/**
 	 * Displays a particular model.
@@ -295,8 +316,9 @@ PESAN;
         $failed = false;
         if($id_instansi!==null && isset($id_instansi[0])) {
             // load data first
-            $data = Formasi::model()->getFormated(Yii::app()->params['yearTest'], 
-                    Yii::app()->request->getPost('id_instansi')
+            $data = Formasi::model()->getFormated(
+                    Yii::app()->params['yearTest'], 
+                    $id_instansi
                 );
             if($data!==null) {
                 // render

@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'List MasterInstansi', 'url'=>array('index')),
 	array('label'=>'Create MasterInstansi', 'url'=>array('create')),
 	array('label'=>'Update MasterInstansi', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete MasterInstansi', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete MasterInstansi', 'url'=>'#', 'linkOptions'=>array('csrf'=>true, 'submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage MasterInstansi', 'url'=>array('admin')),
 );
 ?>

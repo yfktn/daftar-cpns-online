@@ -24,40 +24,46 @@ function generateFieldName($model_name, $attribute_name) {
             <th>Kolom Pemilihan Formasi</th>
         </tr>
     </thead>
-    <?php foreach ($data as $item): ?>
-        <?php if ($curr_tenaga != $item['tenaga_dilamar']): // GROUPING TENAGA DILAMAR ?>
-            <tr>
-                <td colspan="3"><h4><?php echo $item['tenaga_dilamar']; ?></h4></td>
-            </tr>
-            <?php $curr_tenaga = $item['tenaga_dilamar']; ?>
-        <?php endif; ?>
-        <tr>
-            <?php if ($curr_jabatan != $item['jabatan']): // GROUPING JABATAN?>
-                <td>
-                    <?php
-                    echo $item['jabatan'];
-                    $curr_jabatan = $item['jabatan'];
-                    ?>
-                </td>
-            <?php else: ?>
-                <td>
-                    &nbsp;
-                </td>
+    <?php if(!empty($data)): ?>
+        <?php foreach ($data as $item): ?>
+            <?php if ($curr_tenaga != $item['tenaga_dilamar']): // GROUPING TENAGA DILAMAR ?>
+                <tr>
+                    <td colspan="3"><h4><?php echo $item['tenaga_dilamar']; ?></h4></td>
+                </tr>
+                <?php $curr_tenaga = $item['tenaga_dilamar']; ?>
             <?php endif; ?>
-            <td>
-                <?php echo $item['kual_pend']; // Kualifikasi Pendidikan?>
-            </td>
-            <td><center>
-                <?php
-                echo TbHtml::radioButton(
-                        generateFieldName($model_name, $attribute_name), 
-                        $checked = strcmp($value,$item['id'])==0, 
-                        $htmlOptions = array('value' => $item['id']));
-                ?>
-                </center>
-            </td>
-        </tr>
-<?php endforeach; ?>
+            <tr>
+                <?php if ($curr_jabatan != $item['jabatan']): // GROUPING JABATAN?>
+                    <td>
+                        <?php
+                        echo $item['jabatan'];
+                        $curr_jabatan = $item['jabatan'];
+                        ?>
+                    </td>
+                <?php else: ?>
+                    <td>
+                        &nbsp;
+                    </td>
+                <?php endif; ?>
+                <td>
+                    <?php echo $item['kual_pend']; // Kualifikasi Pendidikan?>
+                </td>
+                <td><center>
+                    <?php
+                    echo TbHtml::radioButton(
+                            generateFieldName($model_name, $attribute_name), 
+                            $checked = strcmp($value,$item['id'])==0, 
+                            $htmlOptions = array('value' => $item['id']));
+                    ?>
+                    </center>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php else: ?>
+            <tr>
+                <td colspan="3"><h4>Maaf data untuk instansi bersangkutan belum masuk!</h4></td>
+            </tr>
+    <?php endif; ?>
 </table>
 <style>
     .highlight-row { font-weight: bold; }

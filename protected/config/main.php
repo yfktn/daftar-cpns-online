@@ -45,8 +45,10 @@ return array(
 	// application components
 	'components'=>array(
 		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			// jangan biarkan untuk menggunakan cookies ...
+            'class'=>'YFWebUser',
+//            'level'=>'Anon',
+			'allowAutoLogin'=>false,
 		),
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -95,6 +97,10 @@ return array(
         ),
         'yiiwheels' => array(
             'class' => 'yiiwheels.YiiWheels',   
+        ),
+        'request'=>array(
+            'enableCsrfValidation'=>true,
+            'enableCookieValidation'=>true,
         ),
 	),
 

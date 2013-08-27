@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'List Formasi', 'url'=>array('index')),
 	array('label'=>'Create Formasi', 'url'=>array('create')),
 	array('label'=>'Update Formasi', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Formasi', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete Formasi', 'url'=>'#', 'linkOptions'=>array('csrf'=>true, 'submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Formasi', 'url'=>array('admin')),
 );
 ?>
