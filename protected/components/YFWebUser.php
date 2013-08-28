@@ -5,16 +5,23 @@
  * @author tonier
  */
 class YFWebUser extends CWebUser {
-    protected $_model;
+    protected $_model=null;
     
     protected $_level = 'Anon';
 
+    protected function loadUser() {
+        if($this->_model==null) {
+            $this->_model=$user = User::model()->find('id=?', array(Yii::app()->user->id));
+        } 
+        return $this->_model;
+    }
+    
     public function getLevel() {
+//        echo "dari db dapat $this->_level". Yii::app()->user->id;
         if(Yii::app()->user->isGuest) {
             return 'Anon';
         } elseif(strcasecmp($this->_level, YFLevelLookup::ANON)==0) { // login but still anon?
-//        echo "dari db dapat $this->_level". Yii::app()->user->id;
-            $user = User::model()->find('id=?', array(Yii::app()->user->id));
+            $user = $this->loadUser();
             $this->_level = $user == null? 'Anon': $user->level;
         }
         return $this->_level;

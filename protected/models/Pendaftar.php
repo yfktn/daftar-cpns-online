@@ -150,7 +150,7 @@ class Pendaftar extends CActiveRecord
 			'id_jabatan' => 'Jabatan Dilamar',
 			'id_formasi' => 'Pilihan Formasi yang Dilamar',
 			'id_kual_pend' => 'Kualifikasi Pendidikan',
-			'id_pendidikan_terakhir' => 'Pendidikan Terakhir',
+			'id_pendidikan_terakhir' => 'Tingkat Pendidikan',
 			'id_lokasi_test' => 'Lokasi Test',
             'id_status_pelamar' => 'Status Berkas Pelamar',
 		);

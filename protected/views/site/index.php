@@ -11,7 +11,8 @@ $this->pageTitle = Yii::app()->name;
         Pemerintah Provinsi Kalimantan Tengah tahun 2013.
     </p>
     <?php
-    echo TbHtml::button(TbHtml::icon(TbHtml::ICON_WARNING_SIGN) . ' Baca Cara Pendaftaran', array(
+    echo TbHtml::linkButton(TbHtml::icon(TbHtml::ICON_WARNING_SIGN) . ' Baca Cara Pendaftaran', array(
+        'url'=>array('/site/page', 'view'=>'about'),
         'color' => TbHtml::BUTTON_COLOR_INFO,
         'size' => TbHtml::BUTTON_SIZE_LARGE)
     );
@@ -43,7 +44,7 @@ $this->pageTitle = Yii::app()->name;
                     <br><br>
                     <?php echo TbHtml::linkButton('Klik Untuk Mengetahui Prasyarat Berkas', 
                             $htmlOptions=array(
-                                'url'=>array('/pendaftar/prasyaratBerkas'),
+                                'url'=>array('/site/page', 'view'=>'prasyaratBerkas'),
                                 'color'=>  TbHtml::BUTTON_COLOR_WARNING, 'size'=>  TbHtml::BUTTON_SIZE_LARGE)); ?>
                 </p>
             </div>

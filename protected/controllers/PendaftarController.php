@@ -32,13 +32,9 @@ class PendaftarController extends Controller implements YF_ICanAccess
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','create','update','view'),
+				'actions'=>array('index','create','update','view','admin','delete'),
                 'expression'=>  'Yii::app()->user->isCan(Yii::app()->controller)'
 //				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -46,23 +42,22 @@ class PendaftarController extends Controller implements YF_ICanAccess
 		);
 	}
     
-    public function getRole($task=null) {
+    public function getRole(&$task = NULL, $modeRewrite = false) {
         if(is_null($task)) {
             $task=  Yii::app()->controller->action->id; // if task == null maka dapatkan id milik action dari controller saat ini
         }
         $role = array();
         $role['index'] = $role['view'] = array('minimalUserLevel'=>YFLevelLookup::OPERATOR);
         $role['create'] = $role['admin'] = $role['delete'] = array(
-            'minimalUserLevel' => YFLevelLookup::ADMIN
+            'minimalUserLevel' => YFLevelLookup::SUPER_ADMIN
         );
         $role['update'] = array(
-            'minimalUserLevel' => YFLevelLookup::ADMIN,
+            'minimalUserLevel' => YFLevelLookup::SUPER_ADMIN,
 //            'bizRule' => function($authorUserId) { 
 //                return Yii::app()->user->id == $authorUserId; 
 //            }
         );
-        return $role[$task];
-        
+        return $modeRewrite? $role: $role[$task];
     }
     
 

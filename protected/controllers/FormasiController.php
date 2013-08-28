@@ -86,7 +86,12 @@ class FormasiController extends YFMasterController
 	 */
 	public function actionIndex()
 	{
+//        $criteria = new CDbCriteria();
+//        if(Yii::app()->user->level != YFLevelLookup::SUPER_ADMIN) {
+//            $criteria->scopes = 'tampilInstansiUserSaja';
+//        }
 		$dataProvider=new CActiveDataProvider('Formasi');
+//        $dataProvider->criteria = $criteria;
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

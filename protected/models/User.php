@@ -109,6 +109,13 @@ class User extends CActiveRecord
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('id_instansi',$this->id_instansi,true);
 		$criteria->compare('last_login',$this->last_login,true);
+        
+        // filter di grid
+        // bila bukan super admin maka lakukan default hanya menampilkan instansi
+        // yang dimiliki oleh user
+        if(Yii::app()->user->level != YFLevelLookup::SUPER_ADMIN) {
+            $criteria->compare('id_instansi', Yii::app()->user->instansi);
+        }
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -179,4 +186,12 @@ class User extends CActiveRecord
         $this->old_pass = $this->password;
     }
     
+    public function scopes() {
+        return array(
+            'filterBerdasarInstansi'=>array(
+                'condition'=>'id_instansi=:idins',
+                'params'=>array(':idins'=>Yii::app()->user->instansi)
+            )
+        );
+    }
 }

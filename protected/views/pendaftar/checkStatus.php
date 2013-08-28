@@ -7,10 +7,10 @@
 <?php
 $this->breadcrumbs=array(
 //	'Pendaftar'=>array('index'),
-	"Check Status Verifikasi Dokumen",
+	"Check Data Diserahkan",
 );?>
 
-<h2>Check Status Verifikasi Dokumen Lamaran</h2>
+<h2>Check Data Diserahkan</h2>
 
 <div class="form">
     <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
@@ -62,8 +62,8 @@ $this->breadcrumbs=array(
         'data'=>$model->pendaftar,
         'attributes'=>array(
     //		'id',
-            'kode_verifikasi',
             'no_ktp',
+            'kode_verifikasi',
             'nama',
             'tempat_lahir',
             'tanggal_lahir',
@@ -94,15 +94,15 @@ $this->breadcrumbs=array(
             'jurusan',
             'tahun_lulus',
             'IPK',
-            'terverifikasi',
+//            'terverifikasi',
     //		'id_verifikator',
     //		'id_tenaga_dilamar',
     //		'id_jabatan',
     //		'id_kual_pend',
-            'id_lokasi_test',
-            'id_status_pelamar',
-            'create_time',
-            'update_time',
+//            'id_lokasi_test',
+//            'id_status_pelamar',
+//            'create_time',
+//            'update_time',
         ),
     )); ?>
     <?php echo TbHtml::linkButton('Formulir Isian CPNS', $htmlOptions=array(

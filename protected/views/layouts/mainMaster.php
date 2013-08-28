@@ -7,6 +7,12 @@
     <?php Yii::app()->bootstrap->register(); ?>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+    <style>
+        @media print {
+            #header, #mainmenu, #breadcrumb, #footer { display: none; }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -19,7 +25,7 @@
         </div>
 	</div><!-- header -->
     
-    <div class="row">
+    <div class="row" id="mainmenu">
         <div class="span12">
         <?php $this->widget('bootstrap.widgets.TbNavbar', array(
             'brandLabel' => 'CPNS',
@@ -40,7 +46,7 @@
         </div>
     </div>
     
-    <div class="row">
+    <div class="row" id="breadcrumb">
         <div class="span12">
         <?php if(isset($this->breadcrumbs)):?>
             <?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(

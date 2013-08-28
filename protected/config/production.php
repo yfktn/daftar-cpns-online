@@ -1,5 +1,5 @@
 <?php
-
+// PRODUCTION CONFIGURATION
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -29,7 +29,7 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		#/*
+		/*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'rahasia',
@@ -39,7 +39,7 @@ return array(
                 'application.gii',
             ),
 		),
-		#*/
+		*/
 	),
 
 	// application components
@@ -62,7 +62,7 @@ return array(
 		),
 		*/
 		#/*
-		'db'=>require(dirname(__FILE__).'/db-development.php'),
+		'db'=>require(dirname(__FILE__).'/db-production.php'),
 		#*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -76,12 +76,12 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				#/*
 				array(
 					'class'=>'CWebLogRoute',
                     'levels'=>'trace',
 				),
-				*/
+				#*/
 			),
 		),
         'bootstrap'=>array(
@@ -94,9 +94,12 @@ return array(
             'enableCsrfValidation'=>true,
             'enableCookieValidation'=>true,
         ),
-        'cache'=>array(
-            'class'=>'system.caching.CDummyCache',
+        'cacheDb'=>array(
+            'class'=>'CDbCache',
         ),
+        'cache'=>array(
+            'class'=>'system.caching.CFileCache',
+        )
 	),
 
 	// application-level parameters that can be accessed

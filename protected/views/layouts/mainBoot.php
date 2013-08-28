@@ -7,6 +7,13 @@
     <?php Yii::app()->bootstrap->register(); ?>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+    
+    <style>
+        @media print {
+            #header, #mainmenu, #breadcrumb, #footer { display: none; }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -19,7 +26,7 @@
         </div>
 	</div><!-- header -->
     
-    <div class="row">
+    <div class="row" id="mainmenu">
         <div class="span12">
         <?php $this->widget('bootstrap.widgets.TbNavbar', array(
             'brandLabel' => 'CPNS',
@@ -31,9 +38,10 @@
                     'items' => array(
                         array('label'=>'Beranda', 'url'=>array('/site/index')),
                         array('label'=>'Mendaftar', 'url'=>array('/pendaftar/daftar')),
-                        array('label'=>'Check Status Verifikasi', 'url'=>array('/pendaftar/checkStatus')),
-                        array('label'=>'Cara Mendaftar', 'url'=>array('/site/page', 'view'=>'about')),
-                        array('label'=>'Kontak Kami', 'url'=>array('/site/contact')),
+                        array('label'=>'Check Data Diserahkan', 'url'=>array('/pendaftar/checkStatus')),
+                        array('label'=>'Cara Mendaftar', 'url'=>array('/site/page', 'view'=>'caraMendaftar')),
+                        array('label'=>'Prasyarat Berkas', 'url'=>array('/site/page', 'view'=>'prasyaratBerkas')),
+//                        array('label'=>'Kontak Kami', 'url'=>array('/site/contact')),
 //                        array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                     ),
@@ -43,7 +51,7 @@
         </div>
     </div>
     
-    <div class="row">
+    <div class="row" id="breadcrumb">
         <div class="span12">
         <?php if(isset($this->breadcrumbs)):?>
             <?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(
