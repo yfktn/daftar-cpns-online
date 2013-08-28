@@ -1,23 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "{{status_pelamar}}".
+ * This is the model class for table "{{tester_kode_verifikasi}}".
  *
- * The followings are the available columns in table '{{status_pelamar}}':
- * @property string $id
- * @property string $nama
- *
- * The followings are the available model relations:
- * @property Pendaftar[] $pendaftars
+ * The followings are the available columns in table '{{tester_kode_verifikasi}}':
+ * @property string $tester
  */
-class StatusPelamar extends CActiveRecord
+class TesterKodeVerifikasi extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{status_pelamar}}';
+		return '{{tester_kode_verifikasi}}';
 	}
 
 	/**
@@ -28,12 +24,11 @@ class StatusPelamar extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, nama', 'required'),
-			array('id', 'length', 'max'=>2),
-			array('nama', 'length', 'max'=>150),
+			array('tester', 'required'),
+			array('tester', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nama', 'safe', 'on'=>'search'),
+			array('tester', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,7 +40,6 @@ class StatusPelamar extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'pendaftars' => array(self::HAS_MANY, 'Pendaftar', 'id_status_pelamar'),
 		);
 	}
 
@@ -55,8 +49,7 @@ class StatusPelamar extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'nama' => 'Nama',
+			'tester' => 'Tester',
 		);
 	}
 
@@ -78,8 +71,7 @@ class StatusPelamar extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('nama',$this->nama,true);
+		$criteria->compare('tester',$this->tester,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -90,14 +82,10 @@ class StatusPelamar extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return StatusPelamar the static model class
+	 * @return TesterKodeVerifikasi the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
-    
-    public static function listData() {
-        return CHtml::listData(StatusPelamar::model()->findAll(), 'id', 'nama');
-    }
 }

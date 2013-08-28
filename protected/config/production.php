@@ -95,7 +95,7 @@ return array(
             'enableCookieValidation'=>true,
         ),
         'cacheDb'=>array(
-            'class'=>'CDbCache',
+            'class'=>'system.caching.CFileCache', //  'CDbCache', // di production server tidak ada PDO untuk SQLite
         ),
         'cache'=>array(
             'class'=>'system.caching.CFileCache',

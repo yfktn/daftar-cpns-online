@@ -70,25 +70,28 @@ $this->breadcrumbs=array(
             'alamat_sekarang',
             'no_hp',
     //		'id_instansi',
-            array(
-                'name'=>'id_instansi',
-                'value'=>$model->pendaftar->idFormasi->idInstansi->nama,
-            ),
+    		'nama_instansi',
+//            array(
+//                'name'=>'id_instansi',
+//                'value'=>$model->pendaftar->idFormasi->idInstansi->nama,
+//            ),
     //		'id_formasi',
-            array(
-                'name'=>'id_formasi',
-                'value'=>$model->pendaftar->idFormasi->formasiStr,
-            ),
+    		'namaFormasi',
+//            array(
+//                'name'=>'id_formasi',
+//                'value'=>$model->pendaftar->idFormasi->formasiStr,
+//            ),
     //		'jenis_kelamin',
             array(
                 'name'=>'jenis_kelamin',
-                'value'=>$model->pendaftar->jenis_kelamin==0?'Laki-Laki':'Perempuan',
+                'value'=>$model->pendaftar->jenisKelaminStr,
             ),
     //		'id_pendidikan_terakhir',
-            array(
-                'name'=>'id_pendidikan_terakhir',
-                'value'=>$model->pendaftar->idPendidikanTerakhir->nama,
-            ),
+    		'nama_pendidikan_terakhir',
+//            array(
+//                'name'=>'id_pendidikan_terakhir',
+//                'value'=>$model->pendaftar->idPendidikanTerakhir->nama,
+//            ),
             'nama_sekolah_terakhir',
             'alamat_sekolah_terakhir',
             'jurusan',

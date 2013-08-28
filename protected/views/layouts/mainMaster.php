@@ -29,6 +29,7 @@
         <div class="span12">
         <?php $this->widget('bootstrap.widgets.TbNavbar', array(
             'brandLabel' => 'CPNS',
+             'color' => TbHtml::NAVBAR_COLOR_INVERSE,
             'collapse'=>true,
             'display' => null, // default is static to top
             'items' => array(
@@ -37,6 +38,22 @@
                     'items' => array(
                         array('label'=>'Beranda', 'url'=>array('/master/index')),
                         array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                        array('label'=>'Master', 'url'=>'#', 'visible'=>!Yii::app()->user->isGuest,'items'=>array(
+                                array('label'=>'Master Instansi', 'url'=>array('masterInstansi/index')),
+                                array('label'=>'Master Tenaga Dilamar', 'url'=>array('masterTenagaDilamar/index')),
+                                array('label'=>'Master Jabatan', 'url'=>array('masterJabatan/index')),
+                                array('label'=>'Master Kualifikasi Pendidikan', 'url'=>array('masterKualPend/index')),
+                                array('label'=>'Master Pendidikan Terakhir', 'url'=>array('masterPendTerakhir/index')),
+                        )),
+                        array('label'=>'User', 'url'=>array('user/index')),
+                        array('label'=>'Formasi', 'url'=>'#', 'visible'=>!Yii::app()->user->isGuest,'items'=>array(
+                            array('label'=>'Prasarat Formasi', 'url'=>array('prasarat/index')),
+                            array('label'=>'Buat Formasi', 'url'=>array('formasi/index')),
+                        )),
+                        array('label'=>'Pelamar', 'url'=>'#', 'visible'=>!Yii::app()->user->isGuest,'items'=>array(
+                            array('label'=>'Status Pelamar', 'url'=>array('statusPelamar/index')),
+                            array('label'=>'List Pelamar', 'url'=>array('adminPelamar/index')),
+                        )),
                         array('label'=>'Update Password', 'url'=>array('/user/updatePassword', 'id'=>  Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                     ),

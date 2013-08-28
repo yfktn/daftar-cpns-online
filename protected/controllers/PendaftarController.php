@@ -223,7 +223,7 @@ class PendaftarController extends Controller implements YF_ICanAccess
                 // apabila sudah bisa diserahkan jangan lupa divalidasi lagi ...
                 if($model->validate()) {
                     // bila tidak ada error DAN pendaftar memilih untuk menyerahkan maka lakukan proses penyimpanan ...
-                    if((int)Yii::app()->request->getPost('submit', Pendaftar::STATUS_MASIH_PREVIEW)==Pendaftar::STATUS_BISA_SERAHKAN) {
+                    if((int)Yii::app()->request->getPost('gosubmit', Pendaftar::STATUS_MASIH_PREVIEW)==Pendaftar::STATUS_BISA_SERAHKAN) {
                         // simpan tapi tidak usah lagi di validasi
                         if ($model->save(false)) {
                             // setelah tersimpan maka lempar ke pra-verifikasi

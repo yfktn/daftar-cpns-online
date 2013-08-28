@@ -232,12 +232,25 @@ class Pendaftar extends CActiveRecord
         if(!parent::beforeSave()) return false;
         if($this->isNewRecord) {
             Yii::import('ext.GeneralHelper');
-            $this->kode_verifikasi = strtoupper(GeneralHelper::readableRandomString(Yii::app()->params['verifyCodeLength']));
+            // berusaha untuk mengenerate tanpa kena yang sama ..
+            $nama = substr(str_pad(str_replace(' ', '', $this->nama),4, 'A', STR_PAD_RIGHT), 0, 4); // hilangkan space dan buat namanya
+            $this->kode_verifikasi = strtoupper($nama.GeneralHelper::readableRandomString(Yii::app()->params['verifyCodeLength']));
             $this->tahun_test = Yii::app()->params['yearTest']; // set sendiri tahun test
         }
+        // simpan semua field ke dalam satu table besar agar nantinya bisa di 
+        // generate report secara lebih cepat ...
+        $idFormasi = $this->idFormasi;
+        $this->nama_instansi = $idFormasi->idInstansi->nama;
+        $this->id_tenaga_dilamar = $idFormasi->idTenagaDilamar->id;
+        $this->nama_tenaga_dilamar = $idFormasi->idTenagaDilamar->nama;
+        $this->id_jabatan = $idFormasi->idJabatan->id;
+        $this->nama_jabatan = $idFormasi->idJabatan->nama;
+        $this->id_kual_pend = $idFormasi->idKualPend->id;
+        $this->nama_kual_pend = $idFormasi->idKualPend->nama;
+        $this->nama_pendidikan_terakhir = $this->idPendidikanTerakhir->nama;
         return true;
     }
-    
+
     /**
      * TODO: buat untuk melakukan checking terhadap IPK dan juga usia berdasarkan
      * apa yang sudah diset pada prasarat dan berdasar apa yang sudah diset pda
@@ -291,5 +304,15 @@ class Pendaftar extends CActiveRecord
         );
     }
     
+    /**
+     * Penolong untuk menunjukkan nama formasi yang dilamar dalam visual yang
+     * lebih bisa dibaca
+     */
+    public function getNamaFormasi() {
+        return sprintf("Formasi %s sebagai %s dengan kualifikasi pendidikan %s",
+                $this->nama_tenaga_dilamar, 
+                $this->nama_jabatan,
+                $this->nama_kual_pend);
+    }
     
 }

@@ -20,13 +20,13 @@ class FormasiController extends YFMasterController
 	 */
 	public function actionCreate()
 	{
-		$model=new Formasi;
+		$model=new AdminFormasi;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['Formasi'])) {
-			$model->attributes=$_POST['Formasi'];
+		if (isset($_POST['AdminFormasi'])) {
+			$model->attributes=$_POST['AdminFormasi'];
 			if ($model->save()) {
 				$this->redirect(array('view','id'=>$model->id));
 			}
@@ -49,8 +49,8 @@ class FormasiController extends YFMasterController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['Formasi'])) {
-			$model->attributes=$_POST['Formasi'];
+		if (isset($_POST['AdminFormasi'])) {
+			$model->attributes=$_POST['AdminFormasi'];
 			if ($model->save()) {
 				$this->redirect(array('view','id'=>$model->id));
 			}
@@ -90,7 +90,7 @@ class FormasiController extends YFMasterController
 //        if(Yii::app()->user->level != YFLevelLookup::SUPER_ADMIN) {
 //            $criteria->scopes = 'tampilInstansiUserSaja';
 //        }
-		$dataProvider=new CActiveDataProvider('Formasi');
+		$dataProvider=new CActiveDataProvider('AdminFormasi');
 //        $dataProvider->criteria = $criteria;
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -102,10 +102,10 @@ class FormasiController extends YFMasterController
 	 */
 	public function actionAdmin()
 	{
-		$model=new Formasi('search');
+		$model=new AdminFormasi('search');
 		$model->unsetAttributes();  // clear any default values
-		if (isset($_GET['Formasi'])) {
-			$model->attributes=$_GET['Formasi'];
+		if (isset($_GET['AdminFormasi'])) {
+			$model->attributes=$_GET['AdminFormasi'];
 		}
 
 		$this->render('admin',array(
@@ -117,12 +117,12 @@ class FormasiController extends YFMasterController
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Formasi the loaded model
+	 * @return AdminFormasi the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Formasi::model()->findByPk($id);
+		$model=AdminFormasi::model()->findByPk($id);
 		if ($model===null) {
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
@@ -131,7 +131,7 @@ class FormasiController extends YFMasterController
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Formasi $model the model to be validated
+	 * @param AdminFormasi $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
@@ -142,7 +142,7 @@ class FormasiController extends YFMasterController
 	}
     
     public function actionFormated($year, $instansi) {
-        $c = Formasi::model()->getFormated($year, $instansi);
+        $c = AdminFormasi::model()->getFormated($year, $instansi);
 //        var_dump($c);
     }
 }

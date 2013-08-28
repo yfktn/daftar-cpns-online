@@ -37,6 +37,8 @@
                 echo $form->dropDownListControlGroup($model, 'id_kual_pend', MasterKualPend::listData());
             ?>
 
+            <?php echo $form->textFieldControlGroup($model,'kode_formasi', array('span'=>1)); ?>
+    
             <?php echo $form->textFieldControlGroup($model,'tahun_test',array('value'=>  Yii::app()->params['yearTest'], 'span'=>1)); ?>
     
 

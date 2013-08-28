@@ -11,6 +11,7 @@
     <style>
         @media print {
             #header, #mainmenu, #breadcrumb, #footer { display: none; }
+            .hideOnPrint { display: none; }
         }
     </style>
 

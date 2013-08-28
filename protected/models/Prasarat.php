@@ -238,14 +238,15 @@ FORMAT;
         return false;
     }
     
-    public function defaultScope() {
-        if(!isset(Yii::app()->user->instansi) || // bila bukan user instansi
-            Yii::app()->user->isSuperAdmin())  { // atau si super admin
-            return array();
+    public function beforeSave() {
+        if(!parent::beforeSave()) return false;
+        // pastikan hanya ada satu prasarat dalam satu tahun
+        $checkPrasyarat = Prasarat::model()->find('tahun=:tahuntest AND id_instansi=:idinstansi',
+                array(':tahuntest'=>$this->tahun, ':idinstansi'=>$this->id_instansi));
+        if($checkPrasyarat!=null) {
+            $this->addError('tahun', 'Hanya boleh ada satu prasarat dalam satu tahun untuk satu instansi!');
+            return false;
         }
-        return array(
-                'condition'=>'t.id_instansi=:idinstansi',
-                'params'=>array(':idinstansi'=>  Yii::app()->user->instansi) // user harus sudah login
-        );
+        return true;
     }
 }

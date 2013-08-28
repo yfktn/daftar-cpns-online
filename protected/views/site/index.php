@@ -12,7 +12,7 @@ $this->pageTitle = Yii::app()->name;
     </p>
     <?php
     echo TbHtml::linkButton(TbHtml::icon(TbHtml::ICON_WARNING_SIGN) . ' Baca Cara Pendaftaran', array(
-        'url'=>array('/site/page', 'view'=>'about'),
+        'url'=>array('/site/page', 'view'=>'caraMendaftar'),
         'color' => TbHtml::BUTTON_COLOR_INFO,
         'size' => TbHtml::BUTTON_SIZE_LARGE)
     );
@@ -49,9 +49,10 @@ $this->pageTitle = Yii::app()->name;
                 </p>
             </div>
             <div class="span4">
-                <p class="well well-large">Apabila pengisian formulir berhasil maka Anda bisa melakukan proses checking terhadap proses verifikasi berkas Anda.
+                <p class="well well-large">
+                    Apabila pengisian formulir berhasil maka Anda bisa melakukan review terhadap isian formulir online serta berbagai informasi proses yang sudah Anda simpan.
                     <br><br>
-                        <?php echo TbHtml::labelTb('INGAT!', array('color'=>  TbHtml::LABEL_COLOR_IMPORTANT)); ?>Untuk melakukan checking ini memerlukan <b>kode verifikasi</b> yang didapatkan dari proses Mendaftar.
+                        <?php echo TbHtml::labelTb('INGAT!', array('color'=>  TbHtml::LABEL_COLOR_IMPORTANT)); ?>Untuk melakukan review ini memerlukan <b>kode verifikasi</b> yang didapatkan dari proses Mendaftar.
                     <br><br>
                     <?php echo TbHtml::linkButton('Klik Untuk Check Status Verifikasi', 
                             $htmlOptions=array(

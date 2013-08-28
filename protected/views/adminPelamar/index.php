@@ -9,8 +9,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Pendaftar', 'url'=>array('index')),
-	array('label'=>'Create Pendaftar', 'url'=>array('create')),
+	array('label'=>'List Pelamar', 'url'=>array('index')),
+//	array('label'=>'Create Pelamar', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -47,7 +47,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+//		'id',
 		'kode_verifikasi',
 		'no_ktp',
 		'nama',

@@ -19,13 +19,13 @@ class PrasaratController extends YFMasterController
 	 */
 	public function actionCreate()
 	{
-		$model=new Prasarat;
+		$model=new AdminPrasarat;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['Prasarat'])) {
-			$model->attributes=$_POST['Prasarat'];
+		if (isset($_POST['AdminPrasarat'])) {
+			$model->attributes=$_POST['AdminPrasarat'];
 			if ($model->save()) {
 				$this->redirect(array('view','id'=>$model->id));
 			}
@@ -48,8 +48,8 @@ class PrasaratController extends YFMasterController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if (isset($_POST['Prasarat'])) {
-			$model->attributes=$_POST['Prasarat'];
+		if (isset($_POST['AdminPrasarat'])) {
+			$model->attributes=$_POST['AdminPrasarat'];
 			if ($model->save()) {
 				$this->redirect(array('view','id'=>$model->id));
 			}
@@ -89,7 +89,7 @@ class PrasaratController extends YFMasterController
 //        if(Yii::app()->user->level != YFLevelLookup::SUPER_ADMIN) {
 //            $criteria->scopes = 'tampilInstansiUserSaja';
 //        }
-		$dataProvider=new CActiveDataProvider('Prasarat');
+		$dataProvider=new CActiveDataProvider('AdminPrasarat');
 //        $dataProvider->criteria = $criteria;
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -101,10 +101,10 @@ class PrasaratController extends YFMasterController
 	 */
 	public function actionAdmin()
 	{
-		$model=new Prasarat('search');
+		$model=new AdminPrasarat('search');
 		$model->unsetAttributes();  // clear any default values
-		if (isset($_GET['Prasarat'])) {
-			$model->attributes=$_GET['Prasarat'];
+		if (isset($_GET['AdminPrasarat'])) {
+			$model->attributes=$_GET['AdminPrasarat'];
 		}
 
 		$this->render('admin',array(
@@ -116,12 +116,12 @@ class PrasaratController extends YFMasterController
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Prasarat the loaded model
+	 * @return AdminPrasarat the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Prasarat::model()->findByPk($id);
+		$model=AdminPrasarat::model()->findByPk($id);
 		if ($model===null) {
 			throw new CHttpException(404,'The requested page does not exist.');
 		}
@@ -130,7 +130,7 @@ class PrasaratController extends YFMasterController
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Prasarat $model the model to be validated
+	 * @param AdminPrasarat $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{

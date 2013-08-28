@@ -6,7 +6,8 @@
 <?php if(Yii::app()->user->hasFlash('pesan')): ?>
     <?php echo TbHtml::alert(
             TbHtml::ALERT_COLOR_INFO, 
-            Yii::app()->user->getFlash('pesan')); ?>
+            Yii::app()->user->getFlash('pesan'),
+            $htmlOptions=array('class'=>'hideOnPrint')); ?>
 <?php endif; ?>
 <div class="form">
 
@@ -128,15 +129,17 @@
             <?php echo TbHtml::submitButton('Review Isian',array(
                 'color'=>TbHtml::BUTTON_COLOR_INFO,
                 'size'=>TbHtml::BUTTON_SIZE_LARGE,
-                'name'=>'submit',
-                'value'=>Pendaftar::STATUS_MASIH_PREVIEW
+                'name'=>'gosubmit',
+                'value'=>Pendaftar::STATUS_MASIH_PREVIEW,
             )); ?>
             <?php if($model->status_scenario==Pendaftar::STATUS_BISA_SERAHKAN): ?>
                 <?php echo TbHtml::submitButton('Serahkan Isian',array(
                     'color'=>TbHtml::BUTTON_COLOR_PRIMARY,
                     'size'=>TbHtml::BUTTON_SIZE_LARGE,
-                    'name'=>'submit',
-                    'value'=>Pendaftar::STATUS_BISA_SERAHKAN
+                    'name'=>'gosubmit',
+                    'value'=>Pendaftar::STATUS_BISA_SERAHKAN,
+                    'data-toggle'=>'modal',
+                    'data-target'=>'#confirmSubmit',
                 )); ?>
             <?php endif; ?>
             <p class="help-block">Klik <b>[Review Isian]</b> untuk melakukan review terhadap isian dan <b>[Serahkan Isian]</b> untuk menyimpan data dan menyerahkan isian untuk di verifikasi.</p>
@@ -146,3 +149,33 @@
     <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<?php if($model->status_scenario==Pendaftar::STATUS_BISA_SERAHKAN): // render confirmation dialog?>
+    <?php
+    $this->widget('bootstrap.widgets.TbModal', array(
+        'id' => 'confirmSubmit',
+        'header' => 'Yakin Akan Menyerahkan Isian',
+        'content' => <<<CONTENT
+<h4>Setelah Diserahkan Isian Tidak Dapat Diubah</h4>
+<p>Setelah Anda menekan tombol Serahkan isian ini maka isian Anda akan disimpan dan
+        tidak dapat diubah lagi.</p>
+CONTENT
+        ,
+        'footer' => array(
+            TbHtml::button('Serahkan Isian', array('id'=>'confirmSubmitBtnOK', 'data-dismiss' => 'modal', 'color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+            TbHtml::button('Batal', array('data-dismiss' => 'modal')),
+        ),
+    ));
+    ?>
+<script lang="javascript">
+    // bila di klik OK maka ... 
+    $('#confirmSubmitBtnOK').click(function() {
+        // tambahkan dulu nilai gosubmit, karena saat di klik dari fungsi submit()
+        // tidak ada mengikutkan nilai dari button submit
+        var input = $("<input>").attr("type", "hidden").attr("name", "gosubmit").val(<?php echo Pendaftar::STATUS_BISA_SERAHKAN; ?>);
+        $('#pendaftar-form')
+                .append($(input)) // tambahkan inputan baru dan ....
+                .submit(); // submit!
+    });
+</script>
+<?php endif; ?>
