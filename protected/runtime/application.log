@@ -3428,3 +3428,1087 @@ Stack trace:
 REQUEST_URI=/index.php?r=adminPelamar/view&id=1
 HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
 ---
+2013/08/28 03:31:01 [error] [exception.CException] exception 'CException' with message 'Properti "YFWebUser.instansi" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('instansi')
+#1 /home/tonier/web-prj/cpns/protected/models/Formasi.php(202): CWebUser->__get('instansi')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(327): Formasi->defaultScope()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(250): CActiveRecord->getDbCriteria()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), 'idFormasi')
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(Pendaftar), 'idFormasi')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(280): CActiveRecord->getActiveFinder('idFormasi')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(181): CActiveRecord->getRelated('idFormasi')
+#8 /home/tonier/web-prj/cpns/protected/models/Pendaftar.php(249): CActiveRecord->__isset('idFormasi')
+#9 /home/tonier/web-prj/cpns/protected/models/Pendaftar.php(224): Pendaftar->checkKelayakanAdministrasi()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CModel.php(160): Pendaftar->afterValidate()
+#11 /home/tonier/web-prj/cpns/protected/controllers/PendaftarController.php(217): CModel->validate()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): PendaftarController->actionDaftar()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('daftar')
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/dafta...')
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#25 {main}
+REQUEST_URI=/index.php?r=pendaftar/daftar
+HTTP_REFERER=http://cpns.local/index.php?r=pendaftar/daftar
+---
+2013/08/28 04:00:02 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (117)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/28 04:00:08 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (117)
+in /home/tonier/web-prj/cpns/index.php (28)
+2013/08/28 05:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php:126
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php(12): PrasaratController->loadModel('1')
+#1 [internal function]: PrasaratController->actionView('1')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PrasaratController), Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PrasaratController), Object(ReflectionMethod), Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/view')
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=prasarat/view&id=1
+---
+2013/08/28 05:05:18 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/models/User.php:184)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#2 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#5 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/index
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+2013/08/28 05:07:26 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/models/User.php:184)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#2 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#5 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/index
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+2013/08/28 05:07:58 [error] [exception.CException] exception 'CException' with message 'YFWebUser dan behaviornya tidak memiliki method ataupun closure bernama "iSuperAdmin"' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/models/User.php(184): CComponent->__call('iSuperAdmin', Array)
+#1 /home/tonier/web-prj/cpns/protected/models/User.php(184): YFWebUser->iSuperAdmin()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(327): User->defaultScope()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): CActiveRecord->getDbCriteria(false)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): CActiveRecord->applyScopes(Object(CDbCriteria))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): CActiveRecord->find('id=?', Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('level')
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): CWebUser->__get('level')
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#11 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#12 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#13 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan(Object(AdminPelamarController))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('Yii::app()->use...', Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(YFWebUser))
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(YFWebUser), Object(AdminPelamarController), Object(CInlineAction), '127.0.0.1', 'GET')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#26 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/in...')
+#27 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /home/tonier/web-prj/cpns/index.php(28): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=adminPelamar/index
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 05:08:06 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:18 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/view&id=1
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:19 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/view&id=2
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:20 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:20 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/admin
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:21 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:21 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/admin
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:22 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:23 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/view&id=1
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:23 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): PrasaratController->filterAccessControl()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): PrasaratController->runActionWithFilters()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): PrasaratController->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=prasarat/update&id=1
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:26 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:13:51 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 05:14:15 [error] [php] Undefined property: YFWebUser::$level (/home/tonier/web-prj/cpns/protected/components/YFWebUser.php:28)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1402): User->getDbCriteria()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1344): User->applyScopes()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1456): User->query()
+#3 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(17): User->find()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(111): YFWebUser->getLevel()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): YFWebUser->__get()
+#6 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(28): YFWebUser->__get()
+#7 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(32): YFWebUser->isSuperAdmin()
+#8 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(37): YFWebUser->isAdmin()
+#9 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54) : eval()'d code(1): YFWebUser->isOperator()
+#10 /home/tonier/web-prj/cpns/protected/components/YFWebUser.php(54): eval()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612) : eval()'d code(1): YFWebUser->isCan()
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php(612): eval()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(392): CAccessRule->evaluateExpression()
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched()
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed()
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): MasterController->filterAccessControl()
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): MasterController->runActionWithFilters()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): MasterController->run()
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /home/tonier/web-prj/cpns/index.php(28): CWebApplication->run()
+REQUEST_URI=/index.php?r=master/index
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (28)
+in /home/tonier/web-prj/cpns/protected/models/User.php (184)
+in /home/tonier/web-prj/cpns/protected/components/YFWebUser.php (17)
+2013/08/28 06:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "prasyaratBerkas" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('prasyaratBerkas')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('prasyaratBerkas')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/prasy...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pendaftar/prasyaratBerkas
+HTTP_REFERER=http://cpns.local/index.php
+---
+2013/08/28 06:31:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "prasyaratBerkas" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('prasyaratBerkas')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('prasyaratBerkas')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/prasy...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pendaftar/prasyaratBerkas
+HTTP_REFERER=http://cpns.local/index.php
+---
+2013/08/28 06:31:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "prasyaratBerkas" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('prasyaratBerkas')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('prasyaratBerkas')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/prasy...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pendaftar/prasyaratBerkas
+HTTP_REFERER=http://cpns.local/index.php
+---
+2013/08/28 06:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "prasyaratBerkas" tidak ditemukan' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('prasyaratBerkas')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=prasyaratBerkas
+HTTP_REFERER=http://cpns.local/index.php?r=site/index
+---
+2013/08/28 06:32:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "prasyaratBerkas" tidak ditemukan' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('prasyaratBerkas')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=prasyaratBerkas
+HTTP_REFERER=http://cpns.local/index.php
+---
+2013/08/28 06:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "about" tidak ditemukan' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://cpns.local/index.php?r=site/page&view=about
+---
+2013/08/28 11:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "about" tidak ditemukan' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://cpns.local/index.php
+---
+2013/08/28 14:03:50 [warning] [application] Gagal mengeset atribut unsafe "password_repeat" dari kelas "User".
+in /home/tonier/web-prj/cpns/protected/controllers/UserController.php (117)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:18:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_instansi' in 'where clause'. Statement SQL yang dijalankan: SELECT `idFormasi`.`id` AS `t1_c0`, `idFormasi`.`id_instansi` AS `t1_c1`, `idFormasi`.`id_tenaga_dilamar` AS `t1_c2`, `idFormasi`.`id_jabatan` AS `t1_c3`, `idFormasi`.`id_kual_pend` AS `t1_c4`, `idFormasi`.`tahun_test` AS `t1_c5`, `idFormasi`.`IPK` AS `t1_c6`, `idFormasi`.`kode_formasi` AS `t1_c7` FROM `tbl_formasi` `idFormasi`  WHERE (t.id_instansi=:idinstansi) AND (`idFormasi`.`id`=:ypl0). Bound with :idinstansi='BARTIM', :ypl0='d6c9f068b76a7dc5d34d812ae6072df4'.
+in /home/tonier/web-prj/cpns/protected/views/pendaftar/praVerifikasi.php (161)
+in /home/tonier/web-prj/cpns/protected/controllers/PendaftarController.php (286)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:18:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_instansi' in 'where clause'. The SQL statement executed was: SELECT `idFormasi`.`id` AS `t1_c0`, `idFormasi`.`id_instansi` AS `t1_c1`, `idFormasi`.`id_tenaga_dilamar` AS `t1_c2`, `idFormasi`.`id_jabatan` AS `t1_c3`, `idFormasi`.`id_kual_pend` AS `t1_c4`, `idFormasi`.`tahun_test` AS `t1_c5`, `idFormasi`.`IPK` AS `t1_c6`, `idFormasi`.`kode_formasi` AS `t1_c7` FROM `tbl_formasi` `idFormasi`  WHERE (t.id_instansi=:idinstansi) AND (`idFormasi`.`id`=:ypl0). Bound with :idinstansi='BARTIM', :ypl0='d6c9f068b76a7dc5d34d812ae6072df4'' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(163): CJoinElement->lazyFind(Object(Pendaftar))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Pendaftar))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(143): CActiveRecord->getRelated('idFormasi')
+#6 /home/tonier/web-prj/cpns/protected/views/pendaftar/praVerifikasi.php(161): CActiveRecord->__get('idFormasi')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('praVerifikasi', Array, true)
+#11 /home/tonier/web-prj/cpns/protected/controllers/PendaftarController.php(286): CController->render('praVerifikasi', Array)
+#12 [internal function]: PendaftarController->actionPraVerifikasi('AABCKUWOKI')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PendaftarController), Array)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PendaftarController), Object(ReflectionMethod), Array)
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('praVerifikasi')
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/praVe...')
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=pendaftar/praVerifikasi&kode=AABCKUWOKI
+HTTP_REFERER=http://cpns.local/index.php?r=pendaftar/checkStatus
+---
+2013/08/28 14:20:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_instansi' in 'where clause'. Statement SQL yang dijalankan: SELECT `idFormasi`.`id` AS `t1_c0`, `idFormasi`.`id_instansi` AS `t1_c1`, `idFormasi`.`id_tenaga_dilamar` AS `t1_c2`, `idFormasi`.`id_jabatan` AS `t1_c3`, `idFormasi`.`id_kual_pend` AS `t1_c4`, `idFormasi`.`tahun_test` AS `t1_c5`, `idFormasi`.`IPK` AS `t1_c6`, `idFormasi`.`kode_formasi` AS `t1_c7` FROM `tbl_formasi` `idFormasi`  WHERE (t.id_instansi=:idinstansi) AND (`idFormasi`.`id`=:ypl0). Bound with :idinstansi='BARTIM', :ypl0='d6c9f068b76a7dc5d34d812ae6072df4'.
+in /home/tonier/web-prj/cpns/protected/views/pendaftar/praVerifikasi.php (161)
+in /home/tonier/web-prj/cpns/protected/controllers/PendaftarController.php (286)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:20:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id_instansi' in 'where clause'. The SQL statement executed was: SELECT `idFormasi`.`id` AS `t1_c0`, `idFormasi`.`id_instansi` AS `t1_c1`, `idFormasi`.`id_tenaga_dilamar` AS `t1_c2`, `idFormasi`.`id_jabatan` AS `t1_c3`, `idFormasi`.`id_kual_pend` AS `t1_c4`, `idFormasi`.`tahun_test` AS `t1_c5`, `idFormasi`.`IPK` AS `t1_c6`, `idFormasi`.`kode_formasi` AS `t1_c7` FROM `tbl_formasi` `idFormasi`  WHERE (t.id_instansi=:idinstansi) AND (`idFormasi`.`id`=:ypl0). Bound with :idinstansi='BARTIM', :ypl0='d6c9f068b76a7dc5d34d812ae6072df4'' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveFinder.php(163): CJoinElement->lazyFind(Object(Pendaftar))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Pendaftar))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(143): CActiveRecord->getRelated('idFormasi')
+#6 /home/tonier/web-prj/cpns/protected/views/pendaftar/praVerifikasi.php(161): CActiveRecord->__get('idFormasi')
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('praVerifikasi', Array, true)
+#11 /home/tonier/web-prj/cpns/protected/controllers/PendaftarController.php(286): CController->render('praVerifikasi', Array)
+#12 [internal function]: PendaftarController->actionPraVerifikasi('AABCKUWOKI')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PendaftarController), Array)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PendaftarController), Object(ReflectionMethod), Array)
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('praVerifikasi')
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pendaftar/praVe...')
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=pendaftar/praVerifikasi&kode=AABCKUWOKI
+HTTP_REFERER=http://cpns.local/index.php?r=pendaftar/checkStatus
+---
+2013/08/28 14:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "formasi/index"' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('formasi/index')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=formasi/index
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/view&id=16
+---
+2013/08/28 14:25:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('formasi/admin')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=formasi/admin
+HTTP_REFERER=http://cpns.local/index.php?r=formasi/view&id=3ea81f799752c8304815af09efde158d
+---
+2013/08/28 14:27:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cpns.AdminPrasarat' doesn't exist. Statement SQL yang dijalankan: SHOW FULL COLUMNS FROM `AdminPrasarat`.
+in /home/tonier/web-prj/cpns/protected/views/prasarat/index.php (22)
+in /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php (96)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:27:30 [error] [exception.CDbException] exception 'CDbException' with message 'Table "AdminPrasarat" untuk kelas active record "AdminPrasarat" tidak ditemukan dalam database.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(AdminPrasarat))
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(147): CListView->init()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#11 /home/tonier/web-prj/cpns/protected/views/prasarat/index.php(22): CBaseController->widget('bootstrap.widge...', Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#16 /home/tonier/web-prj/cpns/protected/controllers/PrasaratController.php(96): CController->render('index', Array)
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): PrasaratController->actionIndex()
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#25 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#27 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/index')
+#28 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#29 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#30 {main}
+REQUEST_URI=/index.php?r=prasarat/index
+HTTP_REFERER=http://cpns.local/index.php?r=formasi/admin
+---
+2013/08/28 14:28:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/update')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prasarat/update&id=2
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/view&id=2
+---
+2013/08/28 14:29:50 [error] [exception.CException] exception 'CException' with message 'Properti "AdminPelamar.pendaftar" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(145): CComponent->__get('pendaftar')
+#1 /home/tonier/web-prj/cpns/protected/views/adminPelamar/view.php(27): CActiveRecord->__get('pendaftar')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php(24): CController->render('view', Array)
+#7 [internal function]: AdminPelamarController->actionView('16')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminPelamarController), Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminPelamarController), Object(ReflectionMethod), Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/vi...')
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=adminPelamar/view&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 14:30:17 [error] [exception.CException] exception 'CException' with message 'Properti "AdminPelamar.pendaftar" tidak didefinisikan.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(145): CComponent->__get('pendaftar')
+#1 /home/tonier/web-prj/cpns/protected/views/adminPelamar/view.php(52): CActiveRecord->__get('pendaftar')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/home/tonier/we...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/tonier/we...', Array, true)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(869): CBaseController->renderFile('/home/tonier/we...', Array, true)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php(24): CController->render('view', Array)
+#7 [internal function]: AdminPelamarController->actionView('16')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminPelamarController), Array)
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminPelamarController), Object(ReflectionMethod), Array)
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/vi...')
+#20 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=adminPelamar/view&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 14:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "create" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/cr...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/create
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 14:50:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "update" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/update&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/view&id=16
+---
+2013/08/28 14:50:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "updateStatus" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('updateStatus')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updateStatus')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/view&id=16
+---
+2013/08/28 14:56:47 [error] [php] Undefined index: UpdatePasswordForm (/home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:32)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): AdminPelamarController->runAction()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(25): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=16
+in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php (32)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:57:11 [error] [php] Undefined index: status_pelamar (/home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:32)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): AdminPelamarController->runAction()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(25): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=16
+in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php (32)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 14:57:57 [error] [php] Undefined index: status_pelamar (/home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:32)
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): AdminPelamarController->runAction()
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): AdminPelamarController->filterAccessControl()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): AdminPelamarController->runActionWithFilters()
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): AdminPelamarController->run()
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/tonier/web-prj/cpns/index.php(25): CWebApplication->run()
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=16
+in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php (32)
+in /home/tonier/web-prj/cpns/index.php (25)
+2013/08/28 15:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "update" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/update&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/view&id=16
+---
+2013/08/28 15:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "create" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/cr...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/create
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 15:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "update" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/update&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 15:04:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "update" seperti yang diminta.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('update')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('update')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=adminPelamar/update&id=16
+HTTP_REFERER=http://cpns.local/index.php?r=adminPelamar/index
+---
+2013/08/28 15:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:52
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php(28): AdminPelamarController->loadModel('15')
+#1 [internal function]: AdminPelamarController->actionUpdateStatus('15')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminPelamarController), Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminPelamarController), Object(ReflectionMethod), Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updateStatus')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=15
+---
+2013/08/28 15:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php:52
+Stack trace:
+#0 /home/tonier/web-prj/cpns/protected/controllers/AdminPelamarController.php(28): AdminPelamarController->loadModel('15')
+#1 [internal function]: AdminPelamarController->actionUpdateStatus('15')
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminPelamarController), Array)
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminPelamarController), Object(ReflectionMethod), Array)
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('updateStatus')
+#13 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('adminPelamar/up...')
+#14 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=adminPelamar/updateStatus&id=15
+---
+2013/08/28 15:14:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('prasarat/admin')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=prasarat/admin
+HTTP_REFERER=http://cpns.local/index.php?r=prasarat/index
+---
+2013/08/28 15:15:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(YFWebUser), 'Anda tidak diot...')
+#1 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('formasi/create')
+#9 /home/tonier/web-prj/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/tonier/web-prj/cpns/index.php(25): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=formasi/create
+HTTP_REFERER=http://cpns.local/index.php?r=formasi/index
+---

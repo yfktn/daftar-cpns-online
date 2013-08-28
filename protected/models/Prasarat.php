@@ -243,7 +243,8 @@ FORMAT;
         // pastikan hanya ada satu prasarat dalam satu tahun
         $checkPrasyarat = Prasarat::model()->find('tahun=:tahuntest AND id_instansi=:idinstansi',
                 array(':tahuntest'=>$this->tahun, ':idinstansi'=>$this->id_instansi));
-        if($checkPrasyarat!=null) {
+        if($checkPrasyarat!=null &&  // ada pada tahun dan instansi yang sama
+                $this->isNewRecord) { // dan membuat record baru maka ...
             $this->addError('tahun', 'Hanya boleh ada satu prasarat dalam satu tahun untuk satu instansi!');
             return false;
         }
