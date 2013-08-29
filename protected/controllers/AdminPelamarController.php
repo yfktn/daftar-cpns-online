@@ -73,7 +73,12 @@ class AdminPelamarController extends YFMasterController
         $role['updateStatus'] = array(
             'minimalUserLevel' => YFLevelLookup::OPERATOR
         );
+        $role['delete'] = array(
+            'minimalUserLevel' => YFLevelLookup::SUPER_ADMIN
+        );
         return $role[$task];
     }
+    
+    
 
 }

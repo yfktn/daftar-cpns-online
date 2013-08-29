@@ -11,7 +11,7 @@
         $this->menu = CMap::mergeArray(
             array(
                 array('label'=>'Menu Item'),
-                array('label'=>'-'),
+                TbHtml::menuDivider(),
             ), 
             $this->menu
         );
